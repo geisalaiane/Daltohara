@@ -1,4 +1,4 @@
-### Projeto desenvolvido no Lapps
+## Projeto desenvolvido no Lapps
 
 Aplicativo em desenvolvimento por [Geísa](https://github.com/geisalaiane) e [Fabrício](https://github.com/fabricioselotto).
 
