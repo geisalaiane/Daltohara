@@ -5,17 +5,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>Protanopia</ion-item>
-    
-    <ion-text>
-      <p align ="justify">
-        Daltônicos desse tipo têm uma redução ou completa ausência do pigmento
-        vermelho e, por isso, quando vêem a cor, enxergam tons de marrom, verde
-        e cinza, dependendo do objeto. Nesses casos, eles também costumam ver o
-        verde bem parecido com o vermelho. Esse é o tipo de daltonismo mais
-        comum.
-      </p>
-    </ion-text>
-  </ion-list>
+
+  <ion-content>
+    <br>
+    <br>
+    <br>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="/assets/img/1.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/3.jpg">
+      </ion-slide>
+    </ion-slides>
+    <br>
+    <br>
+    <p>Aqui estão representadas as formas como cada tipo de daltonismo enxerga o mundo.</p>
+  </ion-content>
 </ion-content>
