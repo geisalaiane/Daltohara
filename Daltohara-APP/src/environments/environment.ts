@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  FIREBASE_CONFIG: {
+    apiKey: "AIzaSyDMsgEu2ag0XS_pBUg1tJdwvsg4MG8EWZg",
+    authDomain: "daltohara.firebaseapp.com",
+    databaseURL: "https://daltohara.firebaseio.com",
+    projectId: "daltohara",
+    storageBucket: "daltohara.appspot.com",
+    messagingSenderId: "757574257139",
+    appId: "1:757574257139:web:665b426839cdf7aab52a86"
+  }
 };
 
 /*

@@ -24,9 +24,6 @@ export class AppComponent {
     });
   }
   SlideExample(){
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
-  };
-}
+
+  }
 }
