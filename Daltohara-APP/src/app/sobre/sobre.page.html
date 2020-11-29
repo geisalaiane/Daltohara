@@ -6,62 +6,96 @@
     <ion-title>Sobre o Daltonismo</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-
-  <img src="assets/img/sobre-imagens.png" />
-
-  <ion-text color="dark">
-    <h4>Tipos de Daltonismo:</h4>
-    <p align ="justify">
-      <ion-text color="danger"><b>Lorem Ipsum</b></ion-text>  is simply dummy text of
-      the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has
-      survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the
-      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.
-    </p>
-
-    <p align ="justify">
-      <ion-text color="danger"><b>Lorem Ipsum</b></ion-text>  is simply dummy text of
-      the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has
-      survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the
-      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.
-    </p>
-
-    <p align ="justify">
-      <ion-text color="danger"><b>Lorem Ipsum</b></ion-text> is simply dummy text of
-      the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has
-      survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the
-      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.
-    </p>
-  </ion-text>
-
-  <ion-text color="dark">
-    <h4>Sintomas:</h4>
-    <p align ="justify">
-      <ion-text color="danger"><b>Lorem Ipsum</b></ion-text> is simply dummy text of
-      the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has
-      survived not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in the
-      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.
-    </p>
-  </ion-text>
+  <img src="assets/img/sobre-imagens.png" alt="" />
+  <h3>
+    <ion-label color="primary">
+      <div class="ion-text-center">
+        O que é?
+      </div>
+    </ion-label>
+  </h3>
+  <ion-item>
+    <ion-label class="ion-text-wrap">
+      <div class="ion-text-justify">
+        Daltonismo é um distúrbio da visão que interfere na percepção das cores como o vermelho ou o verde, sendo que
+        existem os casos mais raros,
+        em que a pessoa ntem visão acromática, ou seja, só enxerga tons de branco, cinza e preto.
+        <br><br>
+        Infelizmente o daltonismo não têm cura e por isso, o diagnóstico precoce pode ajudar muito a adaptação de
+        crianças.
+      </div>
+    </ion-label>
+  </ion-item>
+  <h3>
+    <ion-label color="primary">
+      <div class="ion-text-center">
+        Causas
+      </div>
+    </ion-label>
+  </h3>
+  <ion-item>
+    <ion-label class="ion-text-wrap">
+      <div class="ion-text-justify">
+        Na quase totalidade dos casos, o daltonismo é uma condição geneticamente hereditária e recessiva, ligada ao
+        cromossomo sexual X. Raramente, o transtorno afeta as mulheres, porque possuem dois cromossomos X. Quando elas
+        recebem de um dos pais o cromossomo com a mutação genética, o outro, que é normal, compensa a alteração. O fato
+        é que, apesar de distinguirem normalmente as cores, elas são portadoras do gene defeituoso e podem transmiti-lo
+        para seus filhos. No entanto, só serão daltônicas, se receberem do pai e mãe o cromossomo X com o gene anômalo.
+        <br>
+        <br>
+        Raros são os episódios de daltonismo não transmitidos por herança genética, mas adquiridos em virtude de trauma
+        nos órgãos da visão, deslocamento da retina, tumores cerebrais ou lesões neurológicas, por exemplo.
+      </div>
+    </ion-label>
+  </ion-item>
+  <h3>
+    <ion-label color="primary">
+      <div class="ion-text-center">
+        Tipos
+      </div>
+    </ion-label>
+  </h3>
+  <ion-item>
+    <ion-label class="ion-text-wrap">
+      <div class="ion-text-justify">
+        A deficiência na visão das cores, própria do daltonismo, pode ser de três tipos:
+        <br>
+        <ion-text color="primary"><strong>Protanopia</strong> </ion-text> diminuição ou ausência do pigmento vermelho,
+        sensível às ondas
+        de comprimento longo. Nesse caso,
+        a pessoa enxerga em tons de bege, marrom, verde ou cinza;
+        <ion-text color="primary"><strong>Deuteranopia</strong> </ion-text> ausência ou diminuição dos cones verdes
+        sensíveis às ondas de
+        comprimento médio. Na falta
+        deles, a pessoa enxerga em tons de marrom;
+        <ion-text color="primary"><strong>Tritanopia</strong>> </ion-text> dificuldade para enxergar ondas curtas como
+        os diferentes tons
+        de azul e o amarelo, que adquire tons rosados.
+        <br><br>Para conhecer a visão de cada um dos tipos acesse as imagens do nosso aplicativo clicando aqui:
+        <ion-text color="primary" text-decoration="none">
+          <a [routerLink]="['/visao']">Visão do Daltônico</a>
+        </ion-text>
+      </div>
+    </ion-label>
+  </ion-item>
+  <h3>
+    <ion-label color="primary">
+      <div class="ion-text-center">
+        Teste de Cores Ishihara
+      </div>
+    </ion-label>
+  </h3>
+  <ion-item>
+    <ion-label class="ion-text-wrap">
+      <div class="ion-text-justify">
+        Em 1917 o Dr. Shinobu Ishihara, professor da Universidade de Tóquio criou e desenvolveu o teste mais conhecido
+        como Teste de Cores Ishihara. Este exame é um conjunto imagens onde existem números ou formas
+        desenhadas por círculos coloridos que montam um círculo maior. Essas formas são apresentadas ao paciente durante
+        exame e de acordo com as respostas é criado um diagnóstico do grau de daltonismo.
+        Vale lembrar que no teste feito pelo aplicativo as imagens sendo visualizadas em tela digital, podem sofrer
+        alteração uma vez que cada tela de cada aparelho pode ter configuração diferente.
+      </div>
+    </ion-label>
+  </ion-item>
 </ion-content>
