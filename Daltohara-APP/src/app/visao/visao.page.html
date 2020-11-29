@@ -1,28 +1,38 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Voltar"></ion-back-button>
+    </ion-buttons>
     <ion-title>Visão do Daltônico</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-content>
     <br>
     <br>
     <br>
     <ion-slides pager="true" [options]="slideOpts">
       <ion-slide>
-        <img src="/assets/img/1.jpg">
+        <img src="/assets/img/visao1.jpg">
       </ion-slide>
       <ion-slide>
-        <img src="/assets/img/2.jpg">
+        <img src="/assets/img/visao2.jpg">
       </ion-slide>
       <ion-slide>
-        <img src="/assets/img/7.gif">
+        <img src="/assets/img/visao3.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/visao4.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img/visao5.jpg">
       </ion-slide>
     </ion-slides>
     <br>
     <br>
-    <p>Aqui estão representadas as formas como cada tipo de daltonismo enxerga o mundo.</p>
-  </ion-content>
+
+    <ion-text color="secondary">
+      <h2>Estas imagens representam como um Daltônico vê o mundo</h2>
+    </ion-text>
 </ion-content>
