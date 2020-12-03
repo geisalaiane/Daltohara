@@ -7,5 +7,16 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <ion-img [src]="randomImage"></ion-img>
 
+  <ion-input id="response" type="email" (change)="getUserResponse()" placeholder="Resposta" required></ion-input>
+
+  <ion-button
+    class="ion-padding"
+    color="primary"
+    expand="block"
+    (click)='submit(splitRandomNumber(randomImage), userResponseNumber)'
+  >
+    Enviar
+  </ion-button>
 </ion-content>
