@@ -1,24 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <div class="ion-text-center">
-      <ion-title><b>74</b></ion-title>
-    </div>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-  <!-- fab placed to the top end -->
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="fecharModal()">
-      <ion-icon name="close-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <ion-img src="/assets/img/74.jpg"></ion-img>
-  <ion-img src="/assets/img/respostas/74r.jpg"></ion-img>
-
+  <br>
+  <br>
+  <br>
   <ion-card>
-
     <ion-text color="primary">
       <h3>Aqueles com visão de cor normal veem um <b>74</b>.<br>
         Aqueles com cegueira para as cores vermelha e verde veem um <b>21</b>.
@@ -26,5 +11,15 @@
         Aqueles com daltonismo total não veem nada.
       </h3>
     </ion-text>
-  </ion-card>
+  </ion-card> 
+  
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="fecharModal()" color="medium">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-img src="/assets/img/74.jpg"></ion-img>
+  <ion-img src="/assets/img/respostas/74r.jpg"></ion-img>
+
 </ion-content>
