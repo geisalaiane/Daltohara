@@ -6,7 +6,9 @@
     <ion-title>Sobre o Daltonismo</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)"
+(ionScrollEnd)="logScrollEnd($event)">
   <img src="assets/img/sobre-imagens.png" alt="" />
   <h3>
     <ion-label color="primary">
@@ -100,4 +102,6 @@
       </div>
     </ion-label>
   </ion-item>
+
+  <ion-button (click)="ScrollToTop()" expand="full"> Role para cima </ion-button>
 </ion-content>

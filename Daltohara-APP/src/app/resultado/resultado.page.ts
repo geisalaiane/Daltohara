@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ViewChild } from "@angular/core";
-import { IonContent } from "@ionic/angular";
+import { IonContent, ModalController } from "@ionic/angular";
+import { Modal12Component } from '../componentes/modal12/modal12.component';
 
 @Component({
   selector: "app-resultado",
@@ -10,9 +11,17 @@ import { IonContent } from "@ionic/angular";
 export class ResultadoPage implements OnInit {
   @ViewChild(IonContent, { static: false }) content: IonContent;
 
-  constructor() {}
+  constructor(public modalController: ModalController) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+  async chamarModal12() {
+    const modal = await this.modalController.create({
+      component: Modal12Component,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
 
   logScrollStart(event) {
     console.log("logScrollStart : When Scroll Starts", event);
