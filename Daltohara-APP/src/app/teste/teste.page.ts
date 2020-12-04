@@ -13,17 +13,18 @@ export class TestePage implements OnInit {
   imageOption = [
     '2.jpg',
     '3.jpg',
-    '5.gif',
-    '6.gif',
-    '7.gif',
+    '5.jpg',
+    '6.jpg',
+    '7.jpg',
+    '8.jpg',
     '12.jpg',
-    '15.gif',
-    '16.gif',
-    '26.gif',
-    '29.gif',
-    '42.gif',
+    '15.jpg',
+    '16.jpg',
+    '26.jpg',
+    '29.jpg',
+    '42.jpg',
     '45.jpg',
-    '73.gif',
+    '73.jpg',
     '74.jpg'
   ]
 
