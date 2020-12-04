@@ -7,11 +7,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart($event)" (ionScroll)="logScrolling($event)"
-  (ionScrollEnd)="logScrollEnd($event)">
 
-  <br><br><br><br>
+<ion-content>
 
+  <br>
+  <ion-label color="primary">
+    <div class="ion-text-center">
+      <h2>
+        Se você errou mais que 4 placas é melhor procurar um oftalmologista!<br>
+      </h2>
+      <br>
+      <h2>
+        Para saber as respostas certas toque nas placas:
+      </h2>
+    </div>
+  </ion-label>
   <ion-grid class="ion-align-items-center">
     <ion-row>
       <ion-col class="ion-align-self-center">
@@ -42,8 +52,6 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
-
   <ion-grid class="ion-align-items-center">
     <ion-row>
       <ion-col class="ion-align-self-center">
@@ -73,7 +81,7 @@
   <ion-grid class="ion-align-items-center">
     <ion-row>
       <ion-col class="ion-align-self-center">
-        <ion-img src="/assets/img/29.jpg" (click)="chamarModal26()"></ion-img>
+        <ion-img src="/assets/img/29.jpg" (click)="chamarModal29()"></ion-img>
       </ion-col>
       <ion-col class="ion-align-self-center">
         <ion-img src="/assets/img/45.jpg" (click)="chamarModal45()"></ion-img>
@@ -83,7 +91,4 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <ion-button expand="full" (click)="chamarModal12()"> Clique Aqui </ion-button>
-
 </ion-content>

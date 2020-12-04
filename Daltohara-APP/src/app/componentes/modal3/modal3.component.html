@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>12</ion-title>
+    <div class="ion-text-center">
+      <ion-title><b>3</b></ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
   <!-- fab placed to the top end -->
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button (click)="fecharModal()">
@@ -12,13 +15,16 @@
     </ion-fab-button>
   </ion-fab>
 
-    <ion-img src="/assets/img/3.jpg" ></ion-img>
-    <ion-img src="/assets/img/3.jpg" ></ion-img>
+  <ion-img src="/assets/img/3.jpg"></ion-img>
+  <ion-img src="/assets/img/respostas/3r.jpg"></ion-img>
 
+  <ion-card>
+    <ion-text color="primary">
+      <h3>Aqueles com visão de cor normal veem um <b>3</b>.<br>
+        Aqueles com cegueira para as cores vermelha e verde veem um <b>5</b>. <br>
+        Já aqueles com daltonismo total não veem nada.
+      </h3>
+    </ion-text>
+  </ion-card>
 
-  <ion-text color="primary">
-    <h3>Todas as pessoas devem ver um número 12, incluindo aqueles com daltonismo total.
-      <br>
-      (Se alguém disser que não vê nada ou algo mais, está mentindo!</h3>
-  </ion-text>
 </ion-content>
