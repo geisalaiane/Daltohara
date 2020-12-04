@@ -92,12 +92,10 @@ export class TestePage implements OnInit {
         this.incorrects += 1
         this.showToast("Você errou")
       }
-
       this.randomImage = this.getRandomImage()
     } else {
-      this.showToast(`Você terminou o teste, acertos: ${this.corrects}, erros: ${this.incorrects}`)
-
-      this.router.navigate(['home']);
+      this.showToast(`Você terminou o Teste, Acertos: ${this.corrects}, Erros: ${this.incorrects}`)
+      this.router.navigate(['resultado']);
     }
   }
 

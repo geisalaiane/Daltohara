@@ -7,9 +7,19 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+
+
+
+<br>
+<br>
+
   <ion-img [src]="randomImage"></ion-img>
 
-  <ion-input id="response" type="email" (change)="getUserResponse()" placeholder="Resposta" required></ion-input>
+
+<ion-item>
+  <ion-label position="stacked">Que número você vê?</ion-label>
+  <ion-input id="response" (change)="getUserResponse()" placeholder="Resposta" required clearInput value="" type="number" placeholder="Resposta"></ion-input>
+</ion-item>
 
   <ion-button
     class="ion-padding"

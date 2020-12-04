@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Registro</ion-title>
+    <ion-title>Registrar-se</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<img src="assets/icon/logo-backwhite.jpeg" />
+<img src="assets/icon/logo-backtransparent.png" />
 
 <ion-content>
   <ion-item>
@@ -24,5 +24,13 @@
     (click)="register(user)"
   >
     Registrar
+  </ion-button>
+  <ion-button
+    class="ion-padding"
+    color="light"
+    expand="block"
+    [routerLink]="['/login']"
+  >
+    Cancelar
   </ion-button>
 </ion-content>
