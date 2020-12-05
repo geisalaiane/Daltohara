@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {
-  ToastController,
-} from "@ionic/angular";
+import { ToastController, } from "@ionic/angular";
 
 @Component({
   selector: 'app-teste',
@@ -34,11 +32,14 @@ export class TestePage implements OnInit {
 
   corrects: number = 0
   incorrects: number = 0
+  correct: number = 0
+  incorrect: number =0
 
   constructor(
     private toastCtrl: ToastController,
-    public router: Router
-  ) {}
+    public router: Router,
+    public toastController: ToastController
+  ) { }
 
   ngOnInit() {
     this.randomImage = this.getRandomImage()
@@ -46,7 +47,7 @@ export class TestePage implements OnInit {
 
   removeElementByValue(array, element: string) {
     array.forEach((value, index) => {
-        if (value == element) array.splice(index, 1);
+      if (value == element) array.splice(index, 1);
     });
   }
 
@@ -58,24 +59,24 @@ export class TestePage implements OnInit {
     this.removeElementByValue(this.imageOption, imageName)
 
     const chosenImage = `${imageDir}${imageName}`
-    
+
     return chosenImage
   }
 
   splitRandomNumber(imagePath: String) {
     const splittedResponse = imagePath.split('/')
-    
+
     const lastPosition = splittedResponse.pop()
     const imageResponseNumber = lastPosition.split('.')[0]
 
     return imageResponseNumber
   }
 
-  validResponseFromRandomImage(imageResponse: String, userResponse: String) {    
+  validResponseFromRandomImage(imageResponse: String, userResponse: String) {
     if (userResponse === this.splitRandomNumber(imageResponse)) {
       return true
     }
-    
+
     return false
   }
 
@@ -84,7 +85,7 @@ export class TestePage implements OnInit {
     this.userResponseNumber = document.getElementById("response").value
   }
 
-  submit(imageResponse: String, userResponse: String) {    
+  submit(imageResponse: String, userResponse: String) {
     if (this.imageOption.length > 0) {
       if (this.validResponseFromRandomImage(imageResponse, userResponse)) {
         this.corrects += 1
@@ -95,7 +96,7 @@ export class TestePage implements OnInit {
       }
       this.randomImage = this.getRandomImage()
     } else {
-      this.showToast(`Você terminou o Teste, Acertos: ${this.corrects}, Erros: ${this.incorrects}`)
+      this.presentToastWithOptions(this.corrects, this.incorrects)
       this.router.navigate(['resultado']);
     }
   }
@@ -107,5 +108,32 @@ export class TestePage implements OnInit {
         duration: 3000,
       })
       .then((toastData) => toastData.present());
+  }
+
+  showToastlong(message: string) {
+    this.toastCtrl
+      .create({
+        message: message,
+        duration: 10000,
+      })
+      .then((toastData) => toastData.present());
+  }
+
+  async presentToastWithOptions(corrects: number, incorrects: number) {
+    const toast = await this.toastController.create({
+      header: '',
+      message: `Corretas: ${this.corrects}, incorretas: ${this.incorrects}`,
+      position: 'bottom',
+      buttons: [
+        {
+          text: 'Ok',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    toast.present();
   }
 }

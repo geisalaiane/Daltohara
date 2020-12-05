@@ -28,8 +28,11 @@ export class ResultadoPage implements OnInit {
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {
+    
   }
 
+
+  
   async chamarModal2() {
     const modal = await this.modalController.create({
       component: Modal2Component,
